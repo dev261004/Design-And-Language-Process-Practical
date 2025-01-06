@@ -74,9 +74,7 @@ bool testCase3(const string &input) {
 
 // 4: DFA for strings over lowercase alphabets and digits, starting with an alphabet
 bool testCase4(const string &input) {
-/*    if (!islower(input[0])) {
-        return false; // Must start with a lowercase alphabet
-    }*/
+    
     for(char ch : input) {
         if(!islower(ch) && !isdigit(ch)) {
             return false; // Only lowercase alphabets and digits are allowed
